@@ -11,43 +11,46 @@
 
   <h1>Srinath Shrestha</h1>
   <p>
-    I build software, and write about what is happening underneath it. Most of my time goes into
-    understanding how systems works the way they do and how can i optimise some extra cycles. I work in C, Go . Whatever I am taking apart usually ends up on the  <a href="/blogs">blog</a>.
+    I write software in Go. I like understanding how systems work, finding
+    performance problems, and writing about what I learn on the <a href="/blogs">blog</a>.
   </p>
 
   <h2>Projects</h2>
   <ul>
-    <li>
-      <a href="https://github.com/srinathshrestha/priso">Priso</a> —
-      a scene description language with a built-in editor, rendering 2D and 3D
-      objects through OpenGL. Lexer, parser, renderer and editor written from
-      scratch in C.
-    </li>
     <li>
       <a href="https://github.com/srinathshrestha/quickLogg">quickLogg</a> —
       a log parser that sustains 1–2 GB/s on a single core. Detects JSON,
       Syslog, Nginx and key-value formats automatically, and emits NDJSON for
       anything downstream.
     </li>
+  </ul>
+
+  <h2>Open-source contributions</h2>
+  <ul>
     <li>
-      <a href="https://github.com/srinathshrestha/shortURL">ShortURL</a> —
-      self-hosted link shortening with click analytics by country, device and
-      referrer. Go, Python, PostgreSQL and Redis.
+      <a href="https://github.com/cockroachdb/pebble/pull/6198">CockroachDB Pebble — cache local object paths</a>
+      <i>[approved, in review]</i> — removed repeated filesystem-path construction
+      from a storage hot path. The focused benchmark improved from approximately
+      250 ns, 112 B and 4 allocations per operation to approximately 4 ns with
+      zero allocations.
     </li>
     <li>
-      <a href="https://github.com/srinathshrestha/c-Game">2D Car Racing</a> —
-      an arcade racing game in C with its own rendering path and hand-made
-      assets. Written to learn where the frame budget actually goes.
+      <a href="https://github.com/Judgment-Pack/judgment-pack-runtime/pull/157">Judgment Pack Runtime — linear JSON Pointer construction</a>
+      <i>[merged]</i> — replaced quadratic string construction while preserving
+      RFC 6901 escaping. A one-megabyte regression case improved from approximately
+      25.49 seconds to 0.01 seconds.
+    </li>
+    <li>
+      <a href="https://github.com/alecthomas/participle/pull/483">Participle — allocation-free mapper dispatch</a>
+      <i>[merged]</i> — removed a per-token allocation from a Go parser's lexer hot
+      path. The isolated benchmark improved from approximately 86.4 to 64.6 ns/op
+      and from one allocation to zero.
     </li>
   </ul>
+  <p><a href="https://github.com/srinathshrestha">More work on GitHub →</a></p>
 
   <h2>Experience</h2>
   <ul>
-    <li>
-      <b>Full Stack Developer</b>, LinkVerse (May — July 2025, internship).
-      Automated PDF certificate generation with Next.js and Puppeteer, used more
-      than 100 times. Built AWS CloudFormation utilities for an AI DevOps agent.
-    </li>
     <li>
       <b>Backend Developer</b>, SkyForge System Solutions (Jan — May 2025, internship).
       Built and optimized backend services for <a href="https://diagnostic.sirtika.com/login" target="_blank" rel="noopener">SIRTIKA</a>, a diagnostic platform, focusing on efficient report generation, reliable background processing, and high-performance APIs.
@@ -64,13 +67,6 @@
     <dt>Web <i>[previous]</i></dt>
     <dd>JS, Node, Next.js, Express</dd>
   </dl>
-
-  <h2>Books</h2>
-  <ul>
-    <li><i>Computer Systems: A Programmer's Perspective</i> — Bryant &amp; O'Hallaron [<b><i>read</i></b>]</li> 
-    <li><i>Operating Systems: Three Easy Pieces</i> — Arpaci-Dusseau [<b><i>read</i></b>]</li> 
-    <li><i>Hacking: The Art of Exploitation</i> — Jon Erickson [<i>reading</i>]</li> 
-  </ul>
 
   <h2>Contact</h2>
   <ul>
